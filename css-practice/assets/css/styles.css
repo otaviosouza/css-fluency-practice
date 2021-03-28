@@ -198,13 +198,19 @@ li {
 }
 
 .container-z-index {
+    min-height: 35rem;
     position: relative;
+    background-color: transparent;
+}
+
+.container-float {
     background-color: transparent;
 }
 
 .block-01,
 .block-02,
-.block-03 {
+.block-03,
+.block-04 {
     width: 30rem;
     height: 30rem;
     position: absolute;
@@ -231,4 +237,28 @@ li {
     top: 6rem;
     left: 30rem;
     z-index: 1;
+}
+
+.block-04 {
+    background-color: #e90;
+}
+
+.container-float .block-01,
+.container-float .block-02,
+.container-float .block-03,
+.container-float .block-04 {
+    float: left;
+    width: calc(100% / 3);
+    margin-bottom: 6rem;
+    position: initial;
+    z-index: initial;
+}
+
+.container-float .block-03 {
+    clear: left;
+    float: none;
+}
+
+.block-05 p {
+    clear: left;
 }
