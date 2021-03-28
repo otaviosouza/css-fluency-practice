@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./assets/css/styles.css">
+    <!-- <style rel="stylesheet" type="text/css" media="screen">
+    /* desempenho pior que o link */
+        @import url("./assets/css/styles.css");
+    </style> -->
+    <title>CSS</title>
+</head>
+
+<body>
+    <div class="background-clouds">
+        <h1>Background Clouds</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, totam porro. Laudantium praesentium
+            architecto culpa eum illo doloribus assumenda obcaecati voluptatum quis! Nesciunt eligendi maxime odit magni
+            aperiam facere maiores.</p>
+    </div>
+
+    <div class="background-field">
+        <h1>Background Field</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, excepturi rem nostrum quisquam
+            asperiores dolor tempora earum ex esse, fuga quas? Amet, perferendis nemo eius asperiores accusantium a
+            quibusdam doloribus.</p>
+    </div>
+
+    <div class="" id="bloco03">
+        <div class="" id="bloco04">
+            <h2>Width and height</h2>
+            <p>Lorem ipsum <span>dolor sit amet consectetur</span> adipisicing elit. Iure reprehenderit voluptate
+                tenetur. Quisquam
+                itaque enim nemo optio omnis nobis inventore nihil, tempore, eveniet vero culpa impedit est sint porro
+                accusantium?</p>
+            <p>Deleniti earum ex asperiores accusamus optio possimus voluptatem aliquid necessitatibus nemo facilis est
+                obcaecati sapiente, in voluptates veniam facere nam dolore iusto.</p>
+            <p>Porro quis eaque facilis perspiciatis, eum asperiores a? Expedita, inventore similique alias
+                exercitationem, accusamus dolor nobis voluptas quia fugiat rerum deserunt. Voluptate!</p>
+        </div>
+    </div>
+
+    <!-- box model -->
+    <div class="" id="container-box-model">
+        <h1>Box model - box 01</h1>
+        <p><strong>lorem ipsum dolor uile.</strong> Incidunt quae officia sunt minus quaerat, hic quam officiis
+            illum
+            porro exercitationem veniam repellendus ab minima corrupti iusto nobis cupiditate nesciunt.
+            <span>Voluptas.</span>
+        </p>
+        <p>Velit mollitia ratione iusto labore suscipit exercitationem enim perspiciatis nihil aliquid obcaecati
+            atque
+            commodi dolorem, placeat ad.</p>
+    </div>
+    <div class="container-box-model-02" id="">
+        <h1>Box model - box 02</h1>
+        <p><strong>lorem ipsum dolor uile.</strong> Incidunt quae officia sunt minus quaerat, hic quam officiis
+            illum
+            porro exercitationem veniam repellendus ab minima corrupti iusto nobis cupiditate nesciunt.
+            <span>Voluptas.</span>
+        </p>
+        <p>Velit mollitia ratione iusto labore suscipit exercitationem enim perspiciatis nihil aliquid obcaecati
+            atque
+            commodi dolorem, placeat ad.</p>
+    </div>
+
+    <!-- box sizing and display -->
+    <div class="" id="container-content-box">
+        <h1>Box sizing: content-box</h1>
+        <span>box model = content [width/height] + padding + border-width</span>
+        <hr>
+        <p><strong>lorem ipsum dolor uile.</strong> Incidunt quae officia sunt minus quaerat, hic quam officiis
+            illum
+            porro exercitationem veniam repellendus ab minima corrupti iusto nobis cupiditate nesciunt.
+            <span>Voluptas.</span>
+        </p>
+        <p>Velit mollitia ratione iusto labore suscipit exercitationem enim perspiciatis nihil aliquid obcaecati
+            atque
+            commodi dolorem, placeat ad.</p>
+    </div>
+    <div class="" id="container-border-box">
+        <h1>Box sizing: border-box</h1>
+        <span>box model = width/height (includes content, padding and border-width)</span>
+        <hr>
+        <p><strong>lorem ipsum dolor uile.</strong> Incidunt quae officia sunt minus quaerat, hic quam officiis
+            illum
+            porro exercitationem veniam repellendus ab minima corrupti iusto nobis cupiditate nesciunt.
+            <span>Voluptas.</span>
+        </p>
+        <p>Velit mollitia ratione iusto labore suscipit exercitationem enim perspiciatis nihil aliquid obcaecati
+            atque
+            commodi dolorem, placeat ad.</p>
+    </div>
+    <div class="display-block">
+        <ol>
+            <li>display: block</li>
+            <li>display: block</li>
+            <li>display: block</li>
+            <li>display: block</li>
+        </ol>
+    </div>
+    <div class="display-inline-table">
+        <ol>
+            <li>display: inline-table</li>
+            <li>display: inline-table</li>
+            <li>display: inline-table</li>
+            <li>display: inline-table</li>
+        </ol>
+    </div>
+
+    <!-- positions -->
+    <div class="static">
+        <h2>#01 Block - position: static</h2>
+        <p>It is the default behavior and displacement properties as <em>top</em>, <em>left</em> and others do not affect it.</p>
+        <div class="absolute">
+            <h2>#02 Block - position: absolute</h2>
+            <p>This block is child of <em>#01 Block</em> and has absolute position.<br>It has "0" value to properties <em>bottom</em> and <em>right</em>.</p>
+            <p>It is not following the HTML flow because it looks for the next non-static element. If it doesn't exist it takes the position from the viewport represented by the &lt;html&gt; element.</p>
+        </div><!-- ends .absolute -->
+        <div class="fixed">
+            <h2>#04 Block - position: fixed</h2>
+            <p>It takes the position from the viewport represented by the &lt;html&gt; element.</p>
+        </div><!-- ends .fixed -->
+        <div class="relative">
+            <h2>#05 Block - position: relative</h2>
+            <p>It has the same behavior of static position because it does not have displacement properties.</p>
+        </div><!-- ends .relative -->
+        <div class="relative displacement">
+            <h2>#06 Block - position: relative</h2>
+            <p>This block has displacement properties.</p>
+            <div class="absolute">
+                <h2>#03 Block - position: absolute</h2>
+                <p>This block is child of <em>#06 Block</em> and has absolute position.<br>It has "0" value to properties <em>bottom</em> and <em>right</em>.</p>
+                <p>As the parent element is non-static element, it follows the HTML flow and doesn't take the position from the viewport.</p>
+            </div><!-- ends .absolute -->
+        </div><!-- ends .relative displacement -->
+    </div><!-- ends .static -->
+
+    <!-- z-index -->
+    <div class="container-z-index">
+        <div class="block-01">Block #01</div>
+        <div class="block-02">Block #02</div>
+        <div class="block-03">Block #03</div>
+    </div>
+</body>
+
+</html>

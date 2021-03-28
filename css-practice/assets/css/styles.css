@@ -1,0 +1,234 @@
+@import url("./modules/normalize.css");
+@import url("./modules/reset.local.css");
+@import url("./modules/typograph.css");
+
+/* element selector */
+div {
+    background-color: #f00;
+    background-color: rgba(20%, 60%, 50%, .9);
+    background-color: hsla(120, 100%, 50%, 1);
+    background-position: center top;
+    background-position: 50% 3rem;
+}
+
+/* heritage - 3 selectors MAX (good practice) */
+div h2 {
+    font-size: 2em;
+}
+
+
+/* element.class selector */
+div.background-clouds {
+    background-image: url("../image/background_clouds.jpeg");
+}
+
+div.background-field {
+    background: url("../image/field_of_grass.jpg") 50%;
+}
+
+ol {
+    background-color: #fff;
+}
+
+li {
+    padding: 3rem;
+    border: .2rem solid #f00;
+    background: #222;
+    color: #fff;
+}
+
+/* id selector */
+#bloco03 {
+    width: 100%;
+    height: auto;
+    padding: 1%;
+    background: #040;
+}
+
+#bloco04 {
+    min-width: 50rem;
+    min-height: 20rem;
+    margin-bottom: 6rem;
+    padding: 2rem;
+    background: #02f;
+    font: bold 1.4em sans-serif;
+    color: #fff;
+}
+
+#container-box-model {
+    /* content */
+    width: 40rem;
+    height: 40rem;
+
+    /* internal padding */
+    padding: 2rem 1.5% 1.5rem 2rem;
+    /* top right bottom left */
+    padding: 2rem 1.5rem;
+    /* top/bottom right/left */
+    padding: 2rem 1% 1.5rem;
+    /* top right/left bottom*/
+
+    /* box boundary */
+    border-width: .2rem;
+    border-style: solid;
+    border-color: #f00;
+
+    border: .2rem solid #f00;
+    /* to all borders */
+
+    border-top: .2rem dashed #222;
+    /* specify a border */
+
+
+    /* spacing between boxes */
+    margin: none;
+}
+
+#container-content-box {
+    width: 40rem;
+    height: auto;
+    padding: 2rem 1.5rem;
+    border: .2rem solid #f00;
+    border-top: .2rem dashed #222;
+    margin: 5rem auto;
+
+    /* box model = content [width/height] + padding + border-width */
+    box-sizing: content-box;
+}
+
+#container-border-box {
+    width: 40rem;
+    height: auto;
+    padding: 2rem 1.5rem;
+    border: .2rem solid #f00;
+    border-top: .2rem dashed #222;
+    margin: 5rem auto;
+
+    /* box model = width/height (includes content, padding and border-width) */
+    box-sizing: border-box
+}
+
+/* class selector */
+.container-box-model-02 {
+    /* content */
+    width: 40rem;
+    height: auto;
+
+    /* internal padding */
+    padding: 2rem 1.5rem;
+    /* top/bottom right/left */
+
+    /* box boundary */
+    border: .2rem solid #f00;
+    /* to all borders */
+    border-top: .2rem dashed #222;
+    /* specify a border */
+
+    /* spacing between boxes */
+    margin: 5rem auto;
+}
+
+.display-block,
+.display-inline-table {
+    width: auto;
+    height: auto;
+    padding: 2rem 1.5rem;
+    border: .2rem dotted #f00;
+    margin: 5rem auto;
+}
+
+.display-block li {
+    display: block;
+}
+
+.display-inline-table li {
+    display: inline-table;
+}
+
+/* positions */
+
+.absolute {
+    width: 50rem;
+    padding: 2rem;
+    border: .2rem solid #f00;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: #222;
+    color: #fff;
+}
+
+.absolute h2 {
+    color: #f00;
+}
+
+.fixed {
+    width: 50rem;
+    padding: 2rem;
+    border: .2rem solid #acff00;
+    position: fixed;
+    top: 18.5rem;
+    right: 0;
+    background-color: #222;
+    color: #fff;
+}
+
+.fixed h2 {
+    color: #acff00;
+}
+
+.relative {
+    width: 50%;
+    height: 20rem;
+    padding: 2rem;
+    background-color: #222;
+    color: #fff;
+    border: .2rem solid #05f0ff;
+    position: relative;
+}
+
+.relative>h2 {
+    color: #05f0ff;
+}
+
+.displacement {
+    height: 35rem;
+    top: -4rem;
+    left: 3rem;
+}
+
+.container-z-index {
+    position: relative;
+    background-color: transparent;
+}
+
+.block-01,
+.block-02,
+.block-03 {
+    width: 30rem;
+    height: 30rem;
+    position: absolute;
+    color: #fff;
+    text-align: center;
+}
+
+.block-01 {
+    background-color: #e00;
+    top: 0;
+    left: 0;
+    z-index: 3;
+}
+
+.block-02 {
+    background-color: #00d;
+    top: 3rem;
+    left: 15rem;
+    z-index: 2;
+}
+
+.block-03 {
+    background-color: #0c0;
+    top: 6rem;
+    left: 30rem;
+    z-index: 1;
+}
