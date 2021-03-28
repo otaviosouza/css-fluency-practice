@@ -16,5 +16,6 @@ _Code Editor:_ Code - OSS
 ## History
 
 - 2021-03-28, Otávio Souza
+  - Ends CSS review and starts Flexbox Layout.
   - First commit.
   - Create repository.
