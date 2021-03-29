@@ -1,5 +1,12 @@
+/* reset */
+
 @import url("./modules/normalize.css");
 @import url("./modules/reset.local.css");
 @import url("./modules/typography.css");
+
+/* import vendors */
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css");
+
+/* import modules */
 @import url("./modules/main.css");
 @import url("./modules/media-queries.css");
