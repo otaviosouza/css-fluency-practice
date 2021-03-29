@@ -20,7 +20,9 @@ _Code Editor:_ Code - OSS
 ## History
 
 - 2021-03-29, Otávio Souza
-  - Starts basic layout using CSS Flexbox.
+  - Basic layout using CSS Flexbox.
+    - Basic layout.
+    - Blog layout.
 
 - 2021-03-28, Otávio Souza
   - Ends CSS review and starts Flexbox Layout.
