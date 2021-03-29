@@ -34,7 +34,7 @@
     background-color: #f00;
 }
 
-/* properties */
+/* flex container properties */
 
 .flex-container {
     width: 30%;
@@ -102,4 +102,75 @@
 .align-content {
     flex-wrap: wrap;
     align-content: space-around;
+}
+
+/* flex items properties */
+.flex-grow,
+.flex-shrink,
+.flex-basis {
+    width: 50rem;
+    padding: initial;
+}
+
+.flex-basis {
+    flex-direction: column;
+}
+
+.flex-grow .flex-item,
+.flex-shrink .flex-item,
+.flex-basis .flex-item {
+    width: 7.5rem;
+    height: 7rem;
+    border: initial;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* growth factor */
+    flex-grow: 1;
+    /* 
+    available space = flex container width - sum of flex items width 
+    available space = 50rem - (4 * 7.5rem) = 20rem
+
+    growth unit = available space / sum of growth factor
+    growth unit = 20rem / (3 * 1 + 2) = 4rem
+
+    each flex-item will grow 4rem
+    */
+}
+
+.flex-shrink .flex-item {
+    width: 20rem;
+    height: 7rem;
+    /* default */
+    flex-shrink: 1;
+}
+
+.flex-basis .flex-item {
+    height: 7rem;
+    flex-grow: initial;
+    flex-shrink: initial;
+    flex-shrink: 0;
+    flex-basis: auto;
+    flex-basis: 10rem;
+    flex-basis: 15rem;
+}
+
+.flex-grow .flex-item:nth-child(even),
+.flex-shrink .flex-item:nth-child(even),
+.flex-basis .flex-item:nth-child(even) {
+    background-color: #a4ddce;
+}
+
+.flex-grow .flex-item:nth-child(2) {
+    flex-grow: 2;
+    /* growth unit = 2 * 4rem */
+}
+
+.flex-shrink .flex-item:nth-child(1) {
+    /* keep the flex item width */
+    flex-shrink: 0;
+}
+
+.flex-shrink .flex-item:nth-child(2) {
+    flex-shrink: 2;
 }

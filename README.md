@@ -6,6 +6,10 @@
 
 Get some fluency with Flexbox and CSS Grid to create grid layouts fast.
 
+### Related Pages
+- [CSS Selectors Reference](https://www.w3schools.com/cssref/css_selectors.asp)
+- [CSS Flexbox - W3Schools](https://www.w3schools.com/css/css3_flexbox.asp)
+- [A Complete Guide to Flexbox - CSS-TRICKS](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
 
 ## Dev Environment
 

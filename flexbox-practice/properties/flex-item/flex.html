@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../../assets/css/styles.css">
+    <style type="text/css" media="screen">
+        .flex {
+            width: 50rem;
+            height: 40rem;
+            padding: initial;
+            display: flex;
+        }
+
+        .flex-item {
+            width: 20rem;
+            height: 7rem;
+            border: initial;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex: 0 1 auto;
+            flex: 0 1 10rem;
+            /* auto = flex: 1 1 auto */
+            flex: auto;
+            flex: 1 1 15rem;
+            /* none = flex: 0 0 auto; */
+            flex: none;
+            /* 1 = flex: 1 1 0 */
+            flex: 1;
+            background-color: #cdf6eb;
+        }
+
+        .flex-item:nth-child(even) {
+            background-color: #a4ddce;
+        }
+
+        .flex-item:nth-child(3) {
+            /* 2 = flex: 2 1 0 */
+            flex: 2;
+        }
+
+        .flex-item:nth-child(4) {
+            /* 3 2 = flex: 3 2 0 */
+            flex: 3 2;
+        }
+    </style>
+    <title>flex | Flexbox Layout</title>
+</head>
+
+<body>
+    <p>Shorthand for flex-grow, flex-shrink and flex-basis.</p>
+    <p><em>flex: 0 1 auto;</em> is the default value.</p>
+    <p><strong>It is recommended to use this shorthand rather than set the individual properties.</strong></p>
+    <div class="flex-container flex">
+        <div class="flex-item">0</div>
+        <div class="flex-item">1</div>
+        <div class="flex-item">2</div>
+        <div class="flex-item">3</div>
+    </div>
+</body>
+
+</html>
