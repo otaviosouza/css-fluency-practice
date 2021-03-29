@@ -1,0 +1,33 @@
+header,
+footer {
+    background-color: lightskyblue;
+}
+
+footer {
+    order: 1;
+}
+
+article {
+    background-color: tomato;
+}
+
+.wrapper {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+}
+
+.wrapper>* {
+    padding: 2.5rem;
+}
+
+.nav {
+    background-color: royalblue;
+    order: 1;
+}
+
+.banner {
+    background-color: seagreen;
+    order: 1;
+}

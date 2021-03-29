@@ -1,0 +1,22 @@
+@media screen and (min-width: 1024px) {
+
+    header,
+    footer {
+        flex: 1 0 100%;
+    }
+
+    article {
+        flex: 1 0 60%;
+    }
+
+    .wrapper {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .nav,
+    .banner {
+        order: 0;
+        flex: 1 0 20%;
+    }
+}
