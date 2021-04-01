@@ -1,0 +1,45 @@
+.grid-container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: .605fr repeat(3, 1.26fr) .605fr;
+    grid-auto-rows: 9rem;
+    grid-gap: 1rem;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.grid {
+    padding: 2.5rem;
+    font-size: 2em;
+    grid-column: 1 / -1;
+}
+
+.header {
+    background-color: lightseagreen;
+}
+
+.sidebar {
+    background-color: mediumseagreen;
+    order: 1;
+}
+
+.content {
+    background-color: mediumorchid;
+}
+
+.extra {
+    background-color: coral;
+}
+
+.related-images {
+    background-color: khaki;
+}
+
+.related-posts {
+    background-color: darkorange;
+}
+
+.footer {
+    background-color: lightcoral;
+    order: 2;
+}
