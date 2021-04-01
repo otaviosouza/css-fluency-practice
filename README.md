@@ -19,6 +19,9 @@ _Code Editor:_ Code - OSS
 
 ## History
 
+- 2021-03-31, Otávio Souza
+  - Starts CSS Grid Layout.
+
 - 2021-03-29, Otávio Souza
   - Responsive menu.
   - Basic layout using CSS Flexbox.
