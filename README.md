@@ -28,6 +28,8 @@ _Code Editor:_ Code - OSS
 ## History
 
 - 2021-04-02, Otávio Souza
+  - Finishes Flexbox / CSS Grid practice.
+  - Folders reshuffle.
   - Basic layout using CSS Grid.
     - Blog layout.
 
