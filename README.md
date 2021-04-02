@@ -29,6 +29,8 @@ _Code Editor:_ Code - OSS
 
 - 2021-04-01, Otávio Souza
   - Basic layout using CSS Grid.
+    - Basic layout.
+    - Grid Areas layout.
 
 - 2021-03-31, Otávio Souza
   - Starts CSS Grid Layout.
