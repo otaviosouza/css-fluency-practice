@@ -1,0 +1,54 @@
+img {
+    max-width: 100%;
+}
+
+.content {
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: auto;
+}
+
+.post {
+    padding: .7rem;
+    margin-bottom: 1.5rem;
+    border-bottom: .1rem solid #ccc;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: auto;
+}
+
+.post-title {
+    margin-bottom: .7rem;
+    font-size: 1.6em;
+    font-weight: 600;
+}
+
+.post-title a {
+    color: deepskyblue;
+}
+
+.entry-meta {
+    padding: .3rem .7rem;
+    font-size: .8em;
+}
+
+.entry-meta a {
+    font-weight: 600;
+    color: #444;
+}
+
+.post-title a:hover,
+.entry-meta a:hover {
+    text-decoration: underline;
+}
+
+.post-thumbnail {
+    margin-bottom: .7rem;
+}
+
+.more-link {
+    padding-left: .5rem;
+    font-weight: 600;
+    color: deepskyblue;
+}

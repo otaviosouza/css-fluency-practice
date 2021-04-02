@@ -27,6 +27,10 @@ _Code Editor:_ Code - OSS
 
 ## History
 
+- 2021-04-02, Otávio Souza
+  - Basic layout using CSS Grid.
+    - Blog layout.
+
 - 2021-04-01, Otávio Souza
   - Basic layout using CSS Grid.
     - Basic layout.
