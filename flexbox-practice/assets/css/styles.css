@@ -1,6 +1,6 @@
-@import url("./modules/normalize.css");
-@import url("./modules/reset.local.css");
-@import url("./modules/typography.css");
+@import url("/assets/css/modules/normalize.css");
+@import url("/assets/css/modules/reset.local.css");
+@import url("/assets/css/modules/typography.css");
 
 /* basics */
 
